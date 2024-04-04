@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Videojuegos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #333;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      color: #fff;
+      text-align: center;
+      padding: 5px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .game-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .game-card .card {
+      width: 300px;
+      margin: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .game-card .card img {
+      max-width: 100%;
+      height: auto;
+    }
+    .game-card .card h2 {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    .game-card .card p {
+      margin: 10px 0;
+      font-size: 14px;
+    }
+    .game-card .card .price {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #007bff;
+    }
+    footer {
+      background-color: #494949;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tienda LuPa</h1>
+  </header>
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Juegos</a>
+    <a href="#">Contacto</a>
+  </nav>
+  <div class="container">
+    <div class="game-card">
+      <div class="card">
+        <img src="imagen1.jpg" alt="Juego 1">
+        <h2>Juego 1</h2>
+        <p>Aqui descripcion del juego.</p>
+        <p class="price">$30</p>
+        <button>Añadir al carrito</button>
+      </div>
+      <div class="card">
+        <img src="imagen2.jpg" alt="Juego 2">
+        <h2>Juego 2</h2>
+        <p>Aqui descripcion del juego.</p>
+        <p class="price">$40</p>
+        <button>Añadir al carrito</button>
+      </div>
+      <!-- Agrega más tarjetas de juegos según sea necesario -->
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Tienda LuPa</p>
+  </footer>
+</body>
+</html>
