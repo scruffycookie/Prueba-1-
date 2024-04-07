@@ -1,0 +1,138 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+nav {
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+nav a:hover {
+  background-color: #555;
+}
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+.game-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.game-card .card {
+  width: 300px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.game-card .card img {
+  max-width: 100%;
+  height: auto;
+}
+.game-card .card h2 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.game-card .card p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.game-card .card .price {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #007bff;
+}
+footer {
+  background-color: #494949;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+/*carrusel*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.titulo{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+}
+.Slider-box{
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+
+.Slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.Slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.texto{
+    position: absolute;
+    text-align: center;
+    padding: 0 250px;
+    top: 250px;
+    color: #fff;
+}
+
+.texto h2{
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+.Slider-box img{
+    width: 100%;
+}
+
+@keyframes slide {
+  0% { margin-left: 0; }
+  20% { margin-left: 0; }
+  25% { margin-left: -100%; }
+  45% { margin-left: -100%; }
+  50% { margin-left: -200%; }
+  70% { margin-left: -200%; }
+  75% { margin-left: -300%; }
+  100% { margin-left: -300%; } 
+}
+/*button*/
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
