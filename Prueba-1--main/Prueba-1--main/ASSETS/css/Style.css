@@ -1,0 +1,269 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+nav {
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+nav a:hover {
+  background-color: #555;
+}
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+.game-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+.game-card .card {
+  width: 300px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.game-card .card img {
+  max-width: 100%;
+  height: auto;
+}
+.game-card .card h2 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.game-card .card p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.game-card .card .price {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #007bff;
+}
+footer {
+  background-color: #494949;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+button{background-color: royalblue;
+  color: #c4c4c4;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;}
+
+h1{
+  color: #007bff;
+}
+
+footer{
+	position: bottom;
+	bottom: 0;
+	background: black;
+	height: auto;
+	width: 100vw;
+	padding: 40px 0 0 0;
+}
+
+.footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.footer p{
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: dodgerblue;
+}
+
+.footer-copyright{
+    background: #000;
+    width: 100vw;
+    padding:0;
+}
+.footer-copyright p{
+    margin-top: 10px;
+    font-size: 14px;
+    word-spacing: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*carrusel*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.titulo{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+}
+.Slider-box{
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+
+.Slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+.Slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+.texto{
+    position: absolute;
+    text-align: center;
+    padding: 0 250px;
+    top: 250px;
+    color: #fff;
+}
+
+.texto h2{
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+.Slider-box img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+@keyframes slide {
+  0% { margin-left: 0; }
+  20% { margin-left: 0; }
+  25% { margin-left: -100%; }
+  45% { margin-left: -100%; }
+  50% { margin-left: -200%; }
+  70% { margin-left: -200%; }
+  75% { margin-left: -300%; }
+  100% { margin-left: -300%; } 
+}
+
+
+
+
+/*button*/
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #f8f8f8;
+}
+#container {
+  background-color: #f8f8f8;
+  position: absolute; /* Change to fixed to position relative to the viewport */
+  width: 80px;
+  height: 40px;
+  box-shadow: inset 4px 4px 6px #cecece, inset -4px -4px 6px #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  top: 2px; /* Adjust the distance from the top */
+  right: 10px; /* Adjust the distance from the right */
+  padding: 20px;
+  border: 1px solid #c4c4c4;
+}
+
+.toggle {
+  position: absolute; /* Change to absolute to position relative to the #container */
+  top: 0px;
+  left: 0px;
+  width: 40px;
+  height: 40px;
+  transform: scale(.7);
+  background-color: linear-gradient(145deg, #d8d8d8, #FFFFFF);
+  border-radius: 25px;
+  box-shadow: 3px 3px 8px #c4c4c4, -3px -3px 8px #fff;
+}
+#container.active .toggle{
+  left: 0px;
+}
+
+body.active{
+  background-color: #333;
+}
+
+.about__img {
+  width: 125px;
+  border-radius: 20rem;
+  margin-right: 20rem;
+  align-items: left;
+}
