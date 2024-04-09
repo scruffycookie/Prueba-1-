@@ -77,7 +77,7 @@ button{background-color: royalblue;
   transition: all 0.3s ease 0s;}
 
 h1{
-  color: #007bff;
+  color: #8a2be2;
 }
 
 /*carrusel*/
@@ -157,17 +157,17 @@ body{
 }
 #container{
   background-color: #f8f8f8;
-  position: fixed; /* fija el contenedor en la ventana del navegador */
+  position: relative;
   width: 80px;
   height: 40px;
   box-shadow: inset 4px 4px 6px #cecece,
               inset -4px -4px 6px #fff;
   margin: 0px auto;
-  margin-top: 350px;
+  margin-top: auto;
   border-radius: 25px;
   cursor: pointer;
-  top: -200px;
-  left: 20px; 
+
+  left: -650px; 
 }
 
 .toggle{
@@ -189,4 +189,31 @@ body{
 
 body.active{
   background-color: #333;
+}
+
+/*about*/
+.about{
+  background-color: #444
+  ;
+}
+
+.about__bg{
+  background-color: dimgrey;
+  border-radius: 10px;
+}
+
+.about__container {
+  display: flex;
+  align-items: center;
+}
+.about__data{
+  text-align: center;
+}
+.about__img {
+  width: 320px;
+  border-radius: 1rem;
+  margin-right: 2rem; /* Ajusta el espacio entre la imagen y el texto */
+}
+.about__description {
+  flex: 1; /* Para que el texto ocupe el espacio restante */
 }
