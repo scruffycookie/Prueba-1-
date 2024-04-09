@@ -77,7 +77,68 @@ button{background-color: royalblue;
   transition: all 0.3s ease 0s;}
 
 h1{
-  color: #8a2be2;
+  color: #007bff;
+}
+
+footer{
+	position: bottom;
+	bottom: 0;
+	background: black;
+	height: auto;
+	width: 100vw;
+	padding: 40px 0 0 0;
+}
+
+.footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.footer p{
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: dodgerblue;
+}
+
+.footer-copyright{
+    background: #000;
+    width: 100vw;
+    padding:0;
+}
+.footer-copyright p{
+    margin-top: 10px;
+    font-size: 14px;
+    word-spacing: 2px;
+    align-items: center;
+    justify-content: center;
 }
 
 /*carrusel*/
@@ -157,17 +218,17 @@ body{
 }
 #container{
   background-color: #f8f8f8;
-  position: relative;
+  position: fixed; /* fija el contenedor en la ventana del navegador */
   width: 80px;
   height: 40px;
   box-shadow: inset 4px 4px 6px #cecece,
               inset -4px -4px 6px #fff;
   margin: 0px auto;
-  margin-top: auto;
+  margin-top: 350px;
   border-radius: 25px;
   cursor: pointer;
-
-  left: -650px; 
+  top: -200px;
+  left: 20px; 
 }
 
 .toggle{
@@ -191,29 +252,9 @@ body.active{
   background-color: #333;
 }
 
-/*about*/
-.about{
-  background-color: #444
-  ;
-}
-
-.about__bg{
-  background-color: dimgrey;
-  border-radius: 10px;
-}
-
-.about__container {
-  display: flex;
-  align-items: center;
-}
-.about__data{
-  text-align: center;
-}
 .about__img {
-  width: 320px;
-  border-radius: 1rem;
-  margin-right: 2rem; /* Ajusta el espacio entre la imagen y el texto */
-}
-.about__description {
-  flex: 1; /* Para que el texto ocupe el espacio restante */
+  width: 125px;
+  border-radius: 20rem;
+  margin-right: 20rem;
+  align-items: left;
 }
