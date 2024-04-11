@@ -101,7 +101,6 @@ footer{
   line-height: 28px;
   font-size: 14px;
 }
-
 .socials{
     list-style: none;
     display: flex;
@@ -140,6 +139,14 @@ footer{
     align-items: center;
     justify-content: center;
 }
+.footer-container {
+  display: flex;
+  align-items: center; /* Alinea los elementos verticalmente */
+  justify-content: center; /* Alinea los elementos horizontalmente */
+  flex-direction: column; /* Coloca los elementos en columna */
+  text-align: center; /* Alinea el texto al centro */
+}
+
 
 
 /*carrusel*/
@@ -262,10 +269,8 @@ body.active{
   background-color: #f8f8f8;
   
 }
-
 .about__img {
-  width: 125px;
+  width: 150px; /* Ajusta el tamaño según sea necesario */
   border-radius: 20rem;
-  margin-right: 20rem;
-  align-items: left;
+  margin-top: 20px; /* Añadimos margen superior para separar la imagen del texto */
 }
