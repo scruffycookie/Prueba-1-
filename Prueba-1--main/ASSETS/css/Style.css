@@ -159,6 +159,9 @@ footer{
     margin: 50px auto 0;
     overflow: hidden;
     border-radius: 50px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
 }
 
 
@@ -167,12 +170,18 @@ footer{
     padding: 0;
     width: 400%;
     animation: slide 20s infinite alternate ease-in-out;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
 }
 
 .Slider-box li{
     width: 100%;
     list-style: none;
     position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
 }
 
 .texto{
@@ -190,6 +199,9 @@ footer{
 
 .Slider-box img{
     width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
 }
 
 @keyframes slide {
@@ -216,36 +228,33 @@ footer{
 body{
   background-color: #f8f8f8;
 }
-#container{
+#container {
   background-color: #f8f8f8;
-  position: fixed; /* fija el contenedor en la ventana del navegador */
+  position: absolute; /* Change to fixed to position relative to the viewport */
   width: 80px;
   height: 40px;
-  box-shadow: inset 4px 4px 6px #cecece,
-              inset -4px -4px 6px #fff;
-  margin: 0px auto;
-  margin-top: 350px;
+  box-shadow: inset 4px 4px 6px #cecece, inset -4px -4px 6px #fff;
   border-radius: 25px;
   cursor: pointer;
-  top: -200px;
-  left: 20px; 
+  top: 2px; /* Adjust the distance from the top */
+  right: 10px; /* Adjust the distance from the right */
+  padding: 20px;
+  border: 1px solid #c4c4c4;
 }
 
-.toggle{
-  position: absolute;
-  top: 0;
-  left: 0;
+.toggle {
+  position: absolute; /* Change to absolute to position relative to the #container */
+  top: 0px;
+  left: 0px;
   width: 40px;
   height: 40px;
   transform: scale(.7);
-  background-color: linear-gradient(145deg,#d8d8d8,#FFFFFF);
+  background-color: linear-gradient(145deg, #d8d8d8, #FFFFFF);
   border-radius: 25px;
-  box-shadow: 3px 3px 8px #c4c4c4,
-              -3px -3px 8px #fff;
+  box-shadow: 3px 3px 8px #c4c4c4, -3px -3px 8px #fff;
 }
-
 #container.active .toggle{
-  left: 40px;
+  left: 0px;
 }
 
 body.active{
