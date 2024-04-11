@@ -226,10 +226,10 @@ footer{
 }
 
 body{
-  background-color: #f8f8f8;
+  background-color: #333;
 }
 #container {
-  background-color: #f8f8f8;
+  background-color: #333 ;
   position: absolute; /* Change to fixed to position relative to the viewport */
   width: 80px;
   height: 40px;
@@ -258,7 +258,8 @@ body{
 }
 
 body.active{
-  background-color: #333;
+  background-color: #f8f8f8;
+  
 }
 
 .about__img {
