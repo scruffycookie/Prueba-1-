@@ -96,7 +96,7 @@ footer{
 	flex-direction: column;
 	text-align: center;
 }
-.footer p{
+.footer p {
   margin: 10px auto;
   line-height: 28px;
   font-size: 14px;
@@ -140,6 +140,7 @@ footer{
     align-items: center;
     justify-content: center;
 }
+
 
 /*carrusel*/
 *{
