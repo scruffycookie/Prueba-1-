@@ -4,6 +4,7 @@ var body = document.querySelector('body');
 toggle.onclick = function(){
     toggle.classList.toggle('active');
     body.classList.toggle('active');
+    juegos.classList.toggle('active');
 }
 
 document.querySelector('.toggle').addEventListener('click', function() {
