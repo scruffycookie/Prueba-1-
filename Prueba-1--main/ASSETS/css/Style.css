@@ -170,7 +170,7 @@ footer{
 /*carrusel*/
 .Slider-box{
     width: 80%;
-    height: 500px;
+    height: 650px;
     margin: 50px auto 0;
     overflow: hidden;
     border-radius: 50px 50px 50px 50px;
@@ -211,6 +211,7 @@ footer{
 .texto h2{
     font-size: 45px;
     margin-bottom: 35px;
+
 }
 
 .Slider-box img{
@@ -313,6 +314,66 @@ body.active{
   justify-content: center;
   color: #333;
 }
+
+/* sobre nosotros */
+
+.container2{
+  padding-right:40px;
+  text-align: center;
+}
+
+.row{
+  max-width: 100%;
+}
+
+
+.container {
+  padding-left: 64px;
+  padding-top:30px;
+  padding-bottom: 64px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  margin-top: 10px;
+  font-size: 48px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.xlarge-font {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 64px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.xlarge-font{
+  text-align: center;
+}
+
+.texto2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+
 /* seccion de telefono */
 .hamburger {
 	appearance: none;
