@@ -11,3 +11,15 @@ function redirectToPrueba() {
         alert("Por favor, completa todos los campos.");
     }
 }
+document.querySelectorAll('.toggle-password').forEach(button => {
+    button.addEventListener('click', function() {
+        const passwordField = this.previousElementSibling;
+        if (passwordField.type === 'password') {
+            passwordField.type = 'text';
+            this.textContent = 'Ocultar';
+        } else {
+            passwordField.type = 'password';
+            this.textContent = 'Mostrar';
+        }
+    });
+});
